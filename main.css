@@ -1,0 +1,22 @@
+* {
+    /* universal selector*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* các thuộc tính này có tính kế thừa nên không bỏ vào Universal */
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    line-height: unset;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}

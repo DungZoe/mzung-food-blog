@@ -1,0 +1,86 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+
+    background-color: #ff2a6b;
+    padding: 15px 0;
+}
+
+.top-bar__pink {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+
+.top-bar__social {
+    display: flex;
+}
+
+ul.top-bar__list {
+    display: flex;
+    text-decoration: none;
+}
+
+ul.top-bar__list > li > i {
+    color: white;
+    size: 5px;
+    cursor: pointer;
+}
+
+ul.top-bar__list > li {
+    padding-right: 35px;
+}
+
+.top-bar__member a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ______________________________ */
+
+.header {
+    margin-top: 50px;
+    padding: 25px 0;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.menu {
+    display: flex;
+    padding: 15px;
+}
+
+ul.menu > li > a {
+    display: flex;
+    text-decoration: none;
+    padding-left: 55px;
+    color: black;
+}
+
+a :hover {
+    color: #ff2a6b;
+}
+
+.header__searchbutton > button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    height: 0px;
+    cursor: pointer;
+}
+
+.header__searchbutton > button > i {
+    background-color: #ff2a6b;
+    color: white;
+    padding: 7px;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 1.5px 1.5px 0 0 #ff2a6b;
+}

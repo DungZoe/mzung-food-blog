@@ -1,0 +1,143 @@
+/* Format Menu line */
+.chosen p {
+    color: #ff2a6b;
+    font-weight: bold;
+}
+
+/* ------------------------------ */
+
+.contact-page {
+    background-image: url(/images/page-top-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 55px 0;
+}
+
+.contact-page > h1 {
+    background-color: #ff2a6b;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 1.25px 1.25px 0 0 #ff2a6b, 0 90px 100px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    padding: 8px 35px;
+    font-size: 65px;
+    display: inline-block;
+}
+
+.contact__col {
+    display: flex;
+
+    margin: 80px 0;
+}
+
+.contact__comment {
+    width: 65%;
+}
+
+.contact__comment > h3 {
+    margin-bottom: 55px;
+
+    color: #474747;
+    font-size: 25px;
+}
+
+.contact__comment > input {
+    height: 50px;
+    width: 100%;
+    margin: 6px 0 15px 0;
+    padding: 25px;
+
+    background-color: #e2ebf5;
+    border: none;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact__comment textarea {
+    height: 250px;
+    width: 100%;
+    margin: 6px 25px 40px 0;
+    padding: 25px;
+
+    background-color: #e2ebf5;
+    border: none;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact__comment a--btn {
+    padding: 17px 50px;
+
+    mask-border-outset: unset;
+    background-color: #ff2a6b;
+    color: white;
+
+    cursor: pointer;
+}
+
+.contact__comment a--btn:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 25px 10px tomato;
+    transition-duration: 0.5s;
+}
+
+.contact__name {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+p.cnt {
+    color: #474747;
+    font-size: 12px;
+    font-style: italic;
+
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.contact__name input {
+    height: 50px;
+
+    margin: 6px 0 15px 0;
+    padding: 25px 180px 25px 25px;
+
+    background-color: #e2ebf5;
+    border: none;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact__info {
+    width: 35%;
+}
+
+.container__small {
+    margin-left: 95px;
+}
+
+.contact__detail li {
+    margin: 25px 0;
+    line-height: 2;
+}
+
+.contact__detail p.title {
+    color: #ff2a6b;
+    text-decoration: underline;
+}
+
+ul.contact__social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    color: #474747;
+}
+
+ul.contact__social a {
+    color: #474747;
+}

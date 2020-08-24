@@ -1,0 +1,156 @@
+/* Format Menu line */
+.chosen p {
+    color: #ff2a6b;
+    font-weight: bold;
+}
+
+/* ------------------------------ */
+
+/* Main content */
+.hero {
+    height: auto;
+    width: 100%;
+
+    background-image: url(/images/slider-bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 300px 0;
+}
+
+/* .hero > h1 {
+    display: inline-block;
+    justify-content: center;
+
+    border-radius: 4px;
+    box-shadow: 1.25px 1.25px 0 0 #ff2a6b, 0 90px 100px rgba(0, 0, 0, 0.3);
+    padding: 5px 45px;
+
+    color: white;
+    background-color: #ff2a6b;
+    font-size: 50px;
+}
+
+.hero > h1 > p {
+    display: inline-block;
+    justify-content: center;
+
+    border-radius: 4px;
+    box-shadow: 1.25px 1.25px 0 0 #ff2a6b, 0 90px 100px rgba(0, 0, 0, 0.3);
+    padding: 5px 45px;
+
+    color: white;
+    /* background-color: #ff2a6b;
+    font-size: 50px; */
+
+/* SECTION DETAIL LIST */
+
+.detail-list__name {
+    position: relative;
+
+    padding-top: 10px;
+    margin: 90px 0 40px 0;
+
+    font-size: 35px;
+    color: #474747;
+}
+
+.detail-list__name::before {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 1000px;
+    height: 5px;
+
+    content: "-";
+
+    box-sizing: border-box;
+
+    padding: 1px 10px 1px 0;
+    margin-left: 0;
+    color: #ff2a4b;
+}
+
+ul.detail-list__food {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+li.detail-list__option {
+    margin: 0 -15px 10px -15px;
+
+    width: 33.333333%;
+}
+
+.detail-list__meal {
+    position: relative;
+}
+
+.detail-list__meal > img {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+li.detail-list__option {
+    max-width: 33.333333%;
+}
+
+.ranking__background {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+
+    vertical-align: middle;
+}
+
+.ranking {
+    display: inline-block;
+    padding: 10px 35px 10px 20px;
+    margin: 0 15px;
+
+    background-color: #ff2a6b;
+}
+
+.ranking > p {
+    color: white;
+    font-style: initial;
+}
+
+.ranking i {
+    /* font-size: 12px;
+    color: khaki; */
+}
+
+.star {
+    font-size: 12px;
+    color: khaki;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* .star > li {
+} */
+
+.star__fade > i {
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+/* SECTION FEEDBACK */
+
+section.feedback {
+    background-color: #ecce48;
+}
+
+ul.feedback__cus {
+}
+
+ul.feedback__cus > li {
+}
