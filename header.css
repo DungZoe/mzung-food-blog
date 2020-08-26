@@ -38,6 +38,12 @@ ul.top-bar__list > li {
 .top-bar__member a {
     text-decoration: none;
     color: white;
+
+    transition: 1s;
+}
+
+.top-bar__member a:hover {
+    text-transform: uppercase;
 }
 
 /* ______________________________ */
@@ -62,6 +68,8 @@ ul.menu > li > a {
     text-decoration: none;
     padding-left: 55px;
     color: black;
+
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(199, 60, 101, 0.333));
 }
 
 a :hover {
@@ -79,8 +87,32 @@ a :hover {
 .header__searchbutton > button > i {
     background-color: #ff2a6b;
     color: white;
-    padding: 7px;
+    padding: 8px;
     border-radius: 4px;
     margin-top: 10px;
     box-shadow: 1.5px 1.5px 0 0 #ff2a6b;
+
+    -webkit-box-reflect: below 5px linear-gradient(transparent, rgba(199, 60, 101, 0.333));
+}
+
+.hamburger > button {
+    padding: 8px 10px;
+    margin-top: 7px;
+
+    border-style: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    /* overflow: hidden; */
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(199, 60, 101, 0.333));
+}
+
+.hamburger > button:hover {
+    background-color: lightgrey;
+    box-shadow: 0 0 5px #ff2a6b, 0 0 25px #ff2a6b, 0 0 50px #ff2a6b, 0 0 100px #ff2a6b;
+}
+
+.hamburger > button::after {
+    content: "";
 }

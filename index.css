@@ -1,156 +1,124 @@
-/* Format Menu line */
-.chosen p {
-    color: #ff2a6b;
-    font-weight: bold;
-}
-
-/* ------------------------------ */
-
-/* Main content */
-.hero {
-    height: auto;
-    width: 100%;
-
-    background-image: url(/images/slider-bg-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    padding: 300px 0;
-}
-
-/* .hero > h1 {
-    display: inline-block;
-    justify-content: center;
-
-    border-radius: 4px;
-    box-shadow: 1.25px 1.25px 0 0 #ff2a6b, 0 90px 100px rgba(0, 0, 0, 0.3);
-    padding: 5px 45px;
-
-    color: white;
-    background-color: #ff2a6b;
-    font-size: 50px;
-}
-
-.hero > h1 > p {
-    display: inline-block;
-    justify-content: center;
-
-    border-radius: 4px;
-    box-shadow: 1.25px 1.25px 0 0 #ff2a6b, 0 90px 100px rgba(0, 0, 0, 0.3);
-    padding: 5px 45px;
-
-    color: white;
-    /* background-color: #ff2a6b;
-    font-size: 50px; */
-
-/* SECTION DETAIL LIST */
-
-.detail-list__name {
-    position: relative;
-
-    padding-top: 10px;
-    margin: 90px 0 40px 0;
-
-    font-size: 35px;
+h4 {
     color: #474747;
+    font-size: 16px;
 }
 
-.detail-list__name::before {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 1000px;
-    height: 5px;
-
-    content: "-";
-
-    box-sizing: border-box;
-
-    padding: 1px 10px 1px 0;
-    margin-left: 0;
-    color: #ff2a4b;
-}
-
-ul.detail-list__food {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 100%;
-}
-
-li.detail-list__option {
-    margin: 0 -15px 10px -15px;
-
-    width: 33.333333%;
-}
-
-.detail-list__meal {
-    position: relative;
-}
-
-.detail-list__meal > img {
-    width: 100%;
-    padding: 0 15px;
-    margin-bottom: 10px;
-}
-
-li.detail-list__option {
-    max-width: 33.333333%;
-}
-
-.ranking__background {
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-
-    vertical-align: middle;
-}
-
-.ranking {
-    display: inline-block;
-    padding: 10px 35px 10px 20px;
-    margin: 0 15px;
-
-    background-color: #ff2a6b;
-}
-
-.ranking > p {
-    color: white;
-    font-style: initial;
-}
-
-.ranking i {
-    /* font-size: 12px;
-    color: khaki; */
+h5 {
+    color: #ff2a6b;
+    font-size: 12px;
 }
 
 .star {
-    font-size: 12px;
-    color: khaki;
-
     display: flex;
     flex-flow: row nowrap;
+
+    margin: 10px 0;
 }
 
-/* .star > li {
-} */
+.star > li {
+    font-size: 12px;
+    color: rgb(247, 203, 84);
+}
 
 .star__fade > i {
     font-size: 12px;
-    color: whitesmoke;
+    color: darkgrey;
 }
 
-/* SECTION FEEDBACK */
+/* SECTION PREVIEW */
 
-section.feedback {
-    background-color: #ecce48;
+.preview__group {
+    display: flex;
+    flex-flow: row nowrap;
+
+    max-width: 100%;
+
+    justify-content: space-between;
 }
 
-ul.feedback__cus {
+.preview__group li {
+    display: flex;
 }
 
-ul.feedback__cus > li {
+.top-rate {
+    max-width: 33.333333%;
+}
+
+.most-like {
+    max-width: 33.333333%;
+}
+
+.maria {
+    max-width: 33.333333%;
+}
+
+/* SECTION YELLOW */
+
+section.yellow {
+    padding: 36px 0;
+    background-color: #fdc855;
+}
+
+.yellow__group {
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+}
+
+.yellow__left {
+    position: relative;
+    z-index: 1;
+
+    margin: 50px auto;
+    padding: 20px 150px 20px 200px;
+
+    background: url(/images/thumb/11.jpg) no-repeat left;
+    background-size: 33%;
+    background-color: white;
+}
+
+.yellow__right {
+    position: relative;
+    z-index: 1;
+
+    margin: 50px auto;
+    padding: 20px 150px 20px 200px;
+
+    background: url(/images/thumb/12.jpg) no-repeat left;
+    background-size: 33%;
+    background-color: white;
+}
+
+.yellow__left::before,
+.yellow__right::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "March 08, 2020";
+    padding: 10px 15px;
+
+    background-color: #ff2a6b;
+    color: white;
+
+    font-size: 12px;
+    font-style: italic;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    margin-right: 10px;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.author p {
+    color: #474747;
 }
