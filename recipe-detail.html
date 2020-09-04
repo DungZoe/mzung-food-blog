@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food blog Sai Gon</title>
+    <title>Food blog Sai Gon | Recipe detail</title>
 
     <!-- add icon -->
     <link rel="icon" href="/images/favicon.png" type="images/png">
@@ -22,6 +22,10 @@
     <link <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,300;1,700&display=swap"
         rel="stylesheet">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -129,7 +133,9 @@
 
                 <div class="title">
 
-                    <h1 class="title__name">Lamb Chops with green peper sauce</h1>
+                    <div data-aos="flip-down" data-aos-duration="1200">
+                        <h1 class="title__name">Lamb Chops with green peper sauce</h1>
+                    </div>
                     <p class="title__date">May 15, 2018</p>
 
                     <ul class="star">
@@ -243,7 +249,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repellendus odio et
                                     repudiandae velit, atque iure cumque minima facere. Fugit, repellat nemo dicta qui
                                     molestias delectus tempora enim ducimus aspernatur quibusdam repellendus minus porro
-                                    maxime eligendi harum. Blanditiis, necessitatibus aut!</p>
+                                    maxime eligendi harum.</p>
                             </li>
 
                         </ul>
@@ -315,6 +321,12 @@
         <!-- SECTION FOOTER END -->
 
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/style.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

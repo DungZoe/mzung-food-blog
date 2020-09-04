@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food blog Sai Gon | Contact</title>
+    <title>Food blog Sai Gon| Contact</title>
 
     <!-- add icon -->
     <link rel="icon" href="/images/favicon.png" type="images/png">
@@ -118,19 +118,50 @@
 
     <main>
 
-        <!-- SECTION HERO -->
-        <section class="hero">
+        <!-- SECTION CONTACT-PAGE -->
+        <section class="contact-page">
             <h1>Contact</h1>
         </section>
-        <!-- SECTION HERO END -->
+        <!-- SECTION CONTACT-PAGE END -->
 
         <!-- SECTION CONTACT -->
         <section class="contact">
             <div class="container">
                 <div class="contact__col">
-                    <form>
+                    <div class="contact__comment">
                         <h3>Leave a comment</h3>
                         <div class="contact__name">
+                            <div class="personal">
+                                <div class="form-group">
+                                    <input required type="text" placeholder="Name" name="fullName" id="fullName">
+                                    <label for="fullName">E.g. Phillip Summer</label>
+                                </div>
+
+                                <div class="form-group">
+                                    <input required type="email" placeholder="E-mail" name="Email" id="Email">
+                                    <label for="Email">E.g. Phillip@amail.com</label>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" name="Subject" id="Subject">
+                                <label for="Subject"></label>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea placeholder="Message" name="Message" id="Message" cols="28"
+                                    rows="40"></textarea>
+                                <label for="Message"></label>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit">Send</button>
+                                <button type="button" onclick="alert('Hiiiiii')">Cancel</button>
+                            </div>
+
+                        </div>
+                        <!-- <div class="contact__name">
                             <div class="50"><input required type="text" placeholder="Name">
                                 <p class="cnt">E.g. Phillip Summer</p>
                             </div>
@@ -141,9 +172,12 @@
                         </div>
                         <input type="text" placeholder="Subject"> <br>
                         <textarea placeholder="Message" cols="28" rows="40"></textarea><br>
-                        <button type="submit">Send</button>
-                        <!-- <a--btn href="#">Send</a> -->
-                    </form>
+                        <button style="submit">Send</button>
+                        <a--btn href="#">Send</a> 
+                        
+                            For backup, not active.
+                        -->
+                    </div>
 
                     <div class="contact__info">
                         <a href=""><img src="/images/logo.svg" alt="logo NC"></a>

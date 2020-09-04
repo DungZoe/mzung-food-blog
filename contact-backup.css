@@ -6,7 +6,7 @@
 
 /* ------------------------------ */
 
-.hero {
+.contact-page {
     background-image: url(/images/page-top-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,37 +15,15 @@
     padding: 55px 0;
 }
 
-.hero > h1 {
-    display: inline-block;
-    justify-content: center;
-
-    border-radius: 4px;
-    box-shadow: 1.25px 1.25px 0 0 #ff2a6b, 0 90px 100px rgba(0, 0, 0, 0.3);
-    padding: 8px 35px;
-
+.contact-page > h1 {
     background-color: #ff2a6b;
     color: white;
-
+    border-radius: 4px;
+    box-shadow: 1.25px 1.25px 0 0 #ff2a6b, 0 90px 100px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    padding: 8px 35px;
     font-size: 65px;
-
-    animation-name: zoomIn;
-    animation-duration: 1.5s;
-    animation-fill-mode: both;
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0.2);
-        opacity: 0;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    to {
-        transform: scale(1);
-    }
+    display: inline-block;
 }
 
 .contact__col {
@@ -54,18 +32,34 @@
     margin: 80px 0;
 }
 
-form {
-    width: 65%;
+/* COMMENT */
+
+.contact__comment {
+    max-width: 65%;
 }
 
-form > h3 {
+.contact__comment > h3 {
     margin-bottom: 55px;
 
     color: #474747;
     font-size: 25px;
 }
 
-form > input {
+.contact__name {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.personal {
+    /* display: flex;
+    flex-flow: row nowrap; */
+}
+
+.personal > .form-group {
+    margin-right: 15px;
+}
+
+/* .contact__comment > input {
     height: 50px;
     width: 100%;
     margin: 6px 0 15px 0;
@@ -77,7 +71,7 @@ form > input {
     font-family: "Poppins", sans-serif;
 }
 
-form textarea {
+.contact__comment textarea {
     height: 250px;
     width: 100%;
     margin: 6px 25px 40px 0;
@@ -89,7 +83,7 @@ form textarea {
     font-family: "Poppins", sans-serif;
 }
 
-form > button[type="submit"] {
+button[type="submit"] {
     padding: 17px 50px;
 
     text-decoration: none;
@@ -101,10 +95,10 @@ form > button[type="submit"] {
 }
 
 [type="submit"]:hover {
-    /* border-radius: 20px; */
+    border-radius: 20px;
     box-shadow: 0 0 25px 10px tomato;
-    /* transition-duration: 0.5s; */
-}
+    transition-duration: 0.5s;
+} */
 
 /* .contact__comment a--btn {
     padding: 17px 50px;
@@ -114,9 +108,9 @@ form > button[type="submit"] {
     color: white;
 
     cursor: pointer;
-}
+} */
 
-.contact__comment a--btn:hover {
+/* .contact__comment a--btn:hover {
     border-radius: 20px;
     box-shadow: 0 0 25px 10px tomato;
     transition-duration: 0.5s;
@@ -151,8 +145,10 @@ p.cnt {
     font-family: "Poppins", sans-serif;
 }
 
+/* INFO */
+
 .contact__info {
-    width: 35%;
+    max-width: 35%;
 }
 
 .container__small {

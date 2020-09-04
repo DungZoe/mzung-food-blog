@@ -47,12 +47,27 @@ section.ingre {
 
     content: "For Beginners";
 
-    padding: 12px 25px;
+    padding: 12px 28px 12px 25px;
     margin: 30px 0 10px 0;
 
     color: white;
     background-color: #ff2a6b;
     font-size: 15px;
+}
+
+.title__name::after {
+    position: absolute;
+    top: -58px;
+    left: 135px;
+
+    width: 48px;
+    height: 47px;
+
+    content: "";
+
+    background-color: #ff2a6b;
+
+    transform: skewX(-45deg);
 }
 
 .title__date {
@@ -92,22 +107,46 @@ section.ingre {
 }
 
 .list {
-    /* position: absolute; */
-
     width: 40%;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
+/* Div Items */
+
 .list__item {
+    position: relative;
+
+    display: inline-block;
+
+    padding: 20px 80px 20px 55px;
+
     background-color: #ff2a6b;
+}
+
+.list__item::after {
+    position: absolute;
+    top: 0;
+    left: 200px;
+
+    width: 95px;
+    height: 109px;
+
+    content: "";
+
+    background-color: #ff2a6b;
+
+    transform: skewX(-30deg);
 }
 
 .manage {
     color: white;
 }
 
+/* Div Form-group */
+
 .form-group {
-    padding: 70px 25px;
+    padding: 140px 20px 50px 55px;
+    margin-top: -110px;
 
     background-color: rgb(226, 245, 255);
 }
@@ -122,36 +161,86 @@ ul.pick-up {
 }
 
 li.box {
-    line-height: 3.5;
+    line-height: 3.8;
 }
 
-li.box > input {
-    cursor: pointer;
+input[type="checkbox"] {
+    visibility: hidden;
 }
 
-li.box > label {
+input[type="checkbox"] + label {
     position: relative;
-
-    margin-right: 10px;
-
-    font-size: 17px;
-
+    padding-left: 25px;
+    padding-top: 5px;
+    vertical-align: middle;
     cursor: pointer;
 }
 
-li.box > label::before {
+input[type="checkbox"] + label::before {
     position: absolute;
-    content: "";
     top: 0;
-    left: 0;
+    left: -18px;
 
-    width: 25px;
-    height: 25px;
-    background: #fff;
-    border: 1px solid #aaaaaa;
+    content: "";
 
-    cursor: pointer;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 0.7px solid #ccc;
+    border-radius: 3px;
+
+    background-color: #fff;
 }
+
+input[type="checkbox"]:checked + label::before {
+    background-color: #ff2a6b;
+    transition: all 0.85s ease-in-out;
+}
+
+input[type="checkbox"] + label::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -8px;
+
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+
+    transform: rotate(45deg);
+}
+
+/* @keyframes tick {
+    from {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    60% {
+        width: 5px;
+        height: 0;
+        opacity: 0.5;
+    }
+
+    to {
+        width: 5px;
+        height: 10px;
+        opacity: 1;
+    }
+} */
+
+input[type="checkbox"]:checked + label::after {
+    transform-origin: 50% 50%;
+
+    animation-name: tick;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+/* Div. Descrip */
 
 .descrip {
     width: 60%;
@@ -159,20 +248,28 @@ li.box > label::before {
 }
 
 ul.show {
-    display: block;
 }
 
 ul.show > li {
+    margin-bottom: 20px;
+
     display: flex;
     flex-flow: row nowrap;
+    text-align: start;
 }
 
-ul.show > li > h2 {
-    float: left;
+ul.show h2 {
+    margin-left: 25px;
+
+    font-style: normal;
     font-size: 35px;
-    font-weight: 450;
-
-    line-height: 1.5;
-
     color: #474747;
+}
+
+ul.show p {
+    padding-top: 22px;
+    padding-left: 20px;
+
+    font-size: 15px;
+    line-height: 2;
 }

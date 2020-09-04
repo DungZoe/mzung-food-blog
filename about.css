@@ -28,6 +28,25 @@
     color: white;
 
     font-size: 65px;
+
+    animation-name: zoomIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 /* ------------------------------ */
@@ -82,9 +101,9 @@ a--btn {
 }
 
 a--btn:hover {
-    border-radius: 20px;
+    /* border-radius: 20px; */
     box-shadow: 0 0 25px 10px tomato;
-    transition-duration: 0.5s;
+    /* transition-duration: 0.5s; */
 }
 
 .fact {

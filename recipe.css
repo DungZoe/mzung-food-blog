@@ -6,7 +6,7 @@
 
 /* ------------------------------ */
 
-.recipe {
+.hero {
     background-image: url(/images/page-top-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,15 +15,37 @@
     padding: 55px 0;
 }
 
-.recipe > h1 {
-    background-color: #ff2a6b;
-    color: white;
+.hero > h1 {
+    display: inline-block;
+    justify-content: center;
+
     border-radius: 4px;
     box-shadow: 1.25px 1.25px 0 0 #ff2a6b, 0 90px 100px rgba(0, 0, 0, 0.3);
-    justify-content: center;
     padding: 8px 35px;
+
+    background-color: #ff2a6b;
+    color: white;
+
     font-size: 65px;
-    display: inline-block;
+
+    animation-name: zoomIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 /* SECTION DETAIL LIST */
@@ -40,18 +62,30 @@
 
 .detail-list__name::before {
     position: absolute;
-    top: -30px;
+    top: -7px;
     left: 0;
-    width: 1000px;
+
+    width: 60px;
     height: 5px;
 
-    content: "-";
+    content: "";
 
-    box-sizing: border-box;
+    background-color: #ff2a6b;
+}
 
-    padding: 1px 10px 1px 0;
-    margin-left: 0;
-    color: #ff2a4b;
+.detail-list__name::after {
+    position: absolute;
+    top: -7px;
+    left: 30px;
+
+    width: 45px;
+    height: 5px;
+
+    content: "";
+
+    background-color: #ff2a6b;
+
+    transform: skewX(-45deg);
 }
 
 ul.detail-list__food {
@@ -92,11 +126,31 @@ li.detail-list__option {
 }
 
 .ranking {
+    position: relative;
+
     display: inline-block;
     padding: 10px 35px 10px 20px;
     margin: 0 15px;
 
+    width: 250px;
+
     background-color: #ff2a6b;
+}
+
+.ranking::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -15px;
+
+    width: 25px;
+    height: 66px;
+
+    content: "";
+
+    background-color: #ff2a6b;
+
+    transform: skewX(-15deg);
 }
 
 .ranking > p {

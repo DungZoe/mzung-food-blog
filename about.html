@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Food blog Sai Gon</title>
+    <title> Food blog Sai Gon | About us</title>
 
     <!-- add icon -->
     <link rel="icon" href="/images/favicon.png" type="images/png">
@@ -22,6 +22,10 @@
     <link <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,300;1,700&display=swap"
         rel="stylesheet">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -143,6 +147,7 @@
                     <div class="about__image">
                         <img src="./images/about.jpg" alt="man">
                     </div>
+
                 </div>
             </div>
         </section>
@@ -153,37 +158,47 @@
             <div class="container">
                 <div class="fact__group">
                     <ul class="fact__items">
-                        <li>
-                            <div class="item">
-                                <img src="./images/icon/1.png" alt="1">
-                                <h2>1287</h2>
-                                <p>Amazing receipies</p>
-                            </div>
-                        </li>
 
-                        <li>
-                            <div class="item">
-                                <img src="images/icon/2.png" alt="2">
-                                <h2>25</h2>
-                                <p>Wine pairings</p>
-                            </div>
-                        </li>
+                        <div data-aos="zoom-in" data-aos-duration="900">
+                            <li>
+                                <div class="item">
+                                    <img src="./images/icon/1.png" alt="1">
+                                    <h2>1287</h2>
+                                    <p>Amazing receipies</p>
+                                </div>
+                            </li>
+                        </div>
 
-                        <li>
-                            <div class="item">
-                                <img src="images/icon/3.png" alt="3">
-                                <h2>471</h2>
-                                <p>Meat receipies</p>
-                            </div>
-                        </li>
+                        <div data-aos="zoom-in" data-aos-duration="900">
+                            <li>
+                                <div class="item">
+                                    <img src="images/icon/2.png" alt="2">
+                                    <h2>25</h2>
+                                    <p>Wine pairings</p>
+                                </div>
+                            </li>
+                        </div>
 
-                        <li>
-                            <div class="item">
-                                <img src="images/icon/4.png" alt="4">
-                                <h2>326</h2>
-                                <p>Desert receipies</p>
-                            </div>
-                        </li>
+                        <div data-aos="zoom-in" data-aos-duration="900">
+                            <li>
+                                <div class="item">
+                                    <img src="images/icon/3.png" alt="3">
+                                    <h2>471</h2>
+                                    <p>Meat receipies</p>
+                                </div>
+                            </li>
+                        </div>
+
+                        <div data-aos="zoom-in" data-aos-duration="900">
+                            <li>
+                                <div class="item">
+                                    <img src="images/icon/4.png" alt="4">
+                                    <h2>326</h2>
+                                    <p>Desert receipies</p>
+                                </div>
+                            </li>
+                        </div>
+
                     </ul>
                 </div>
             </div>
@@ -250,6 +265,12 @@
         <!-- SECTION FOOTER END -->
 
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/style.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

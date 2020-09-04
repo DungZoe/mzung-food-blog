@@ -28,6 +28,11 @@ h5 {
 
 .star__fade > i {
     font-size: 12px;
+    color: whitesmoke;
+}
+
+.star__fade-down > i {
+    font-size: 12px;
     color: darkgrey;
 }
 
@@ -50,7 +55,7 @@ h5 {
 
 .top {
     position: absolute;
-    bottom: 235px;
+    bottom: 230px;
 
     display: inline-block;
 
@@ -64,6 +69,26 @@ h5 {
     font-size: 65px;
 
     transform: rotate(4deg);
+
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: rotate(4deg) scale(0.2);
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .middle {
@@ -81,19 +106,46 @@ h5 {
     color: white;
 
     font-size: 50px;
+
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.8s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 .bottom {
     display: inline-block;
 
     border-radius: 4px;
-    box-shadow: 1.25px 1.25px 0 0 #bdfd88, 0 90px 100px rgba(0, 0, 0, 0.3);
+    box-shadow: 1.25px 1.25px 0 0 #d9ff70, 0 90px 100px rgba(0, 0, 0, 0.3);
     padding: 0 21px;
 
-    background-color: #bdfd88;
+    background-color: #d9ff70;
     color: white;
 
-    font-size: 41px;
+    font-size: 43px;
+
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.5s;
 }
 
 /* SECTION DETAIL-LIST */
@@ -150,7 +202,7 @@ ul.detail-list__food {
 }
 
 li.detail-list__option {
-    margin: 0 -15px 10px -15px;
+    margin: 0 -15px;
 
     width: 33.333333%;
 }
@@ -162,7 +214,7 @@ li.detail-list__option {
 .detail-list__meal > img {
     width: 100%;
     padding: 0 15px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 li.detail-list__option {
@@ -171,7 +223,7 @@ li.detail-list__option {
 
 .ranking__background {
     position: absolute;
-    bottom: 15px;
+    bottom: 6px;
     left: 0;
 
     vertical-align: middle;
@@ -181,8 +233,9 @@ li.detail-list__option {
     position: relative;
 
     display: inline-block;
-    padding: 6px 50px 4px 15px;
+    padding: 6px 35px 4px 15px;
     margin: 0 15px;
+    width: 250px;
 
     background-color: #ff2a6b;
 }
