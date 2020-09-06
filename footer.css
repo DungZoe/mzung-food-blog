@@ -95,3 +95,42 @@ ul.footer__menu > li > a:hover {
 p.copyright a {
     color: #007bff;
 }
+
+/* GO TO TOP BUTTON */
+
+.go-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+
+    font-size: 30px;
+
+    color: #ff2a6b;
+
+    animation-name: scroll;
+    animation-duration: 1.5s;
+}
+
+@keyframes scroll {
+    from {
+        opacity: 0;
+        display: none;
+    }
+
+    30% {
+        opacity: 0.2;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
