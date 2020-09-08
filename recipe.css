@@ -100,7 +100,7 @@ ul.detail-list__food {
 li.detail-list__option {
     margin: 0 -15px 10px -15px;
 
-    width: 33.333333%;
+    max-width: 33.333333%;
 }
 
 .detail-list__meal {
@@ -111,10 +111,6 @@ li.detail-list__option {
     width: 100%;
     padding: 0 15px;
     margin-bottom: 10px;
-}
-
-li.detail-list__option {
-    max-width: 33.333333%;
 }
 
 .ranking__background {
@@ -168,9 +164,6 @@ li.detail-list__option {
     flex-flow: row nowrap;
 }
 
-/* .star > li {
-} */
-
 .star__fade > i {
     font-size: 12px;
     color: whitesmoke;
@@ -205,4 +198,34 @@ li.detail-list__option {
     font-size: 17px;
 
     cursor: text;
+}
+
+/* ______________________________ */
+
+/*-------- RESPONSIVE ON TABLET AND MOBILE --------*/
+
+/* LARGE */
+@media only screen and (max-width: 992px) {
+    /* SECTION DETAIL LIST */
+
+    li.detail-list__option {
+        max-width: 50%;
+    }
+}
+
+/* MEDIUM */
+@media only screen and (max-width: 768px) {
+}
+
+/* SMALL */
+@media only screen and (max-width: 576px) {
+    .hero > h1 {
+        font-size: 40px;
+    }
+
+    /* SECTION DETAIL LIST */
+
+    li.detail-list__option {
+        max-width: 100%;
+    }
 }

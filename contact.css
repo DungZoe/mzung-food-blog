@@ -55,7 +55,8 @@
 }
 
 form {
-    width: 65%;
+    min-width: 65%;
+    justify-content: space-between;
 }
 
 form > h3 {
@@ -106,25 +107,11 @@ form > button[type="submit"] {
     /* transition-duration: 0.5s; */
 }
 
-/* .contact__comment a--btn {
-    padding: 17px 50px;
-
-    mask-border-outset: unset;
-    background-color: #ff2a6b;
-    color: white;
-
-    cursor: pointer;
-}
-
-.contact__comment a--btn:hover {
-    border-radius: 20px;
-    box-shadow: 0 0 25px 10px tomato;
-    transition-duration: 0.5s;
-} */
-
 .contact__name {
     display: flex;
     flex-flow: row nowrap;
+
+    /* margin-right: -20px; */
     width: 100%;
 
     justify-content: space-between;
@@ -136,7 +123,7 @@ p.cnt {
     font-style: italic;
 
     margin-top: -5px;
-    margin-bottom: 10px;
+    margin-bottom: -30px;
 }
 
 .contact__name input {
@@ -148,11 +135,17 @@ p.cnt {
     background-color: #e2ebf5;
     border: none;
     font-style: italic;
-    font-family: "Poppins", sans-serif;
+}
+
+input.full {
+    display: none;
+    margin: 0;
+    height: 0;
 }
 
 .contact__info {
-    width: 35%;
+    max-width: 35%;
+    margin-left: 10px;
 }
 
 .container__small {
@@ -179,4 +172,70 @@ ul.contact__social {
 
 ul.contact__social a {
     color: #474747;
+}
+
+/* _____________________ */
+
+/*-------- RESPONSIVE ON TABLET AND MOBILE --------*/
+
+/* LARGE */
+@media only screen and (max-width: 992px) {
+    .contact__col {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    .contact__info {
+        margin-top: 50px;
+        min-width: 100%;
+    }
+
+    .container__small {
+        margin-left: 0;
+    }
+
+    .contact__detail {
+        display: flex;
+    }
+
+    .contact__detail li {
+        margin-right: 40px;
+    }
+
+    ul.contact__social {
+        justify-content: start;
+    }
+
+    ul.contact__social li {
+        padding-right: 20px;
+    }
+}
+
+/* MEDIUM */
+@media only screen and (max-width: 768px) {
+    .contact__name input,
+    .contact__name p {
+        display: none;
+    }
+
+    input.full {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+/* SMALL */
+@media only screen and (max-width: 576px) {
+    .hero > h1 {
+        font-size: 40px;
+    }
+
+    .contact__detail {
+        display: flex;
+        flex-flow: column nowrap;
+    }
 }

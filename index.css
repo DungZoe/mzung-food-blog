@@ -54,9 +54,6 @@ h5 {
 }
 
 .top {
-    position: absolute;
-    bottom: 250px;
-
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -94,8 +91,6 @@ h5 {
 }
 
 .middle {
-    position: relative;
-
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -210,7 +205,7 @@ ul.detail-list__food {
 li.detail-list__option {
     margin: 0 -15px;
 
-    width: 33.333333%;
+    max-width: 33.333333%;
 }
 
 .detail-list__meal {
@@ -282,6 +277,7 @@ li.detail-list__option {
 
 .preview__group li {
     display: flex;
+    flex-flow: row wrap;
     margin-bottom: 11px;
 }
 
@@ -538,3 +534,72 @@ section.yellow {
 }
 
 /* SECTION YELLOW END */
+
+/* ______________________________ */
+
+/*-------- RESPONSIVE ON TABLET AND MOBILE --------*/
+
+/* LARGE */
+@media only screen and (max-width: 992px) {
+    /* SECTION DETAIL LIST */
+    li.detail-list__option {
+        max-width: 50%;
+    }
+
+    /* SECTION PREVIEW */
+
+    .preview__group {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .top-rate,
+    .most-like {
+        max-width: 100%;
+        justify-content: left;
+    }
+
+    /* DIV MARIA */
+    .maria {
+        max-width: 100%;
+    }
+}
+
+/* MEDIUM */
+@media only screen and (max-width: 768px) {
+    /* HERO */
+    .top {
+        font-size: 52px;
+    }
+    .middle {
+        font-size: 41px;
+    }
+    .bottom {
+        font-size: 35px;
+    }
+}
+
+/* SMALL */
+@media only screen and (max-width: 576px) {
+    /* HERO */
+    .top {
+        font-size: 45px;
+    }
+    .middle {
+        font-size: 36px;
+    }
+    .bottom {
+        font-size: 30px;
+    }
+
+    /* SECTION DETAIL LIST */
+    li.detail-list__option {
+        max-width: 100%;
+    }
+
+    /* SECTION PREVIEW */
+    .top-rate {
+        margin-bottom: 50px;
+    }
+}

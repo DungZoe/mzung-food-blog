@@ -3,28 +3,15 @@ section.footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: initial;
+    background-size: cover;
     padding: 70px;
-    margin-top: -10px;
 }
 
 .footer__row {
-    /* position: relative; */
-
     display: flex;
     justify-content: space-around;
     margin: 0 -30px;
 }
-
-/* .scroll-up {
-    position: absolute;
-    top: -90px;
-    right: -40px;
-
-    scroll-behavior: smooth;
-
-    font-size: 5px;
-} */
 
 .footer__col1 {
     width: 50%;
@@ -61,6 +48,10 @@ ul.footer__social {
     padding-top: 15px;
 }
 
+ul.footer__social > li {
+    text-align: left;
+}
+
 ul.footer__social > li > a {
     color: grey;
     margin-right: 25px;
@@ -70,13 +61,17 @@ ul.footer__social > li > a {
 ul.footer__menu {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: flex-end;
 
     text-decoration: none;
 
     padding-top: 17px;
-    margin-bottom: 27px;
-    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+ul.footer__menu > li {
+    text-align: right;
+    padding-left: 30px;
 }
 
 ul.footer__menu > li > a {
@@ -89,7 +84,7 @@ ul.footer__menu > li > a:hover {
 }
 
 .copyright {
-    margin-right: 0;
+    text-align: right;
 }
 
 p.copyright a {
@@ -132,5 +127,71 @@ p.copyright a {
 
     to {
         opacity: 1;
+    }
+}
+
+/* ______________________________ */
+
+/*-------- RESPONSIVE ON TABLET AND MOBILE --------*/
+
+/* LARGE */
+@media only screen and (max-width: 992px) {
+}
+
+/* MEDIUM */
+@media only screen and (max-width: 768px) {
+    .footer__row {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .footer__col1,
+    .footer__col2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    ul.footer__social,
+    ul.footer__menu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: left;
+        text-align: left;
+
+        padding-top: 20px;
+    }
+
+    ul.footer__menu {
+        margin-left: -25px;
+    }
+
+    ul.footer__menu li {
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    .copyright {
+        text-align: left;
+        flex-wrap: nowrap;
+    }
+}
+
+/* SMALL */
+@media only screen and (max-width: 576px) {
+    .footer__col1,
+    .footer__col2 {
+        text-align: center;
+    }
+
+    ul.footer__social,
+    ul.footer__menu {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
     }
 }

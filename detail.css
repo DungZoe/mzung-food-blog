@@ -29,9 +29,6 @@ section.ingre {
 
 /* Div: Title */
 
-.title {
-}
-
 .title__name {
     position: relative;
     margin-top: 10px;
@@ -102,7 +99,7 @@ section.ingre {
     display: flex;
     flex-flow: row nowrap;
 
-    justify-content: left;
+    justify-content: flex-start;
     text-align: left;
 }
 
@@ -155,9 +152,6 @@ legend {
     margin-bottom: 20px;
 
     font-size: 35px;
-}
-
-ul.pick-up {
 }
 
 li.box {
@@ -247,9 +241,6 @@ input[type="checkbox"]:checked + label::after {
     margin-left: 15px;
 }
 
-ul.show {
-}
-
 ul.show > li {
     margin-bottom: 20px;
 
@@ -273,3 +264,37 @@ ul.show p {
     font-size: 15px;
     line-height: 2;
 }
+
+/* _____________________ */
+
+/*-------- RESPONSIVE ON TABLET AND MOBILE --------*/
+
+/* LARGE: No responsive - @media only screen and (max-width: 992px) */
+
+/* MEDIUM */
+@media only screen and (max-width: 768px) {
+    .detail {
+        flex-flow: column wrap;
+    }
+
+    /* Div: Detail */
+
+    .list {
+        display: block;
+
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Div. Descrip */
+
+    .descrip {
+        display: block;
+
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+/* SMALL: No responsive - @media only screen and (max-width: 576px) */

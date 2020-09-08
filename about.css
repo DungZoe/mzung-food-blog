@@ -116,6 +116,11 @@ a--btn:hover {
 .fact__items {
     display: flex;
     justify-content: space-around;
+    max-width: 100%;
+}
+
+.fact__items > div {
+    width: 25%;
 }
 
 .item {
@@ -127,11 +132,60 @@ a--btn:hover {
     font-size: 50px;
     color: #474747;
     text-decoration: none;
-    font-weight: 400px;
 }
 
 .item > p {
     font-size: 15px;
     color: #444;
-    font-weight: 500;
+}
+
+/* _____________________ */
+
+/*-------- RESPONSIVE ON TABLET AND MOBILE --------*/
+
+/* LARGE: No responsive - @media only screen and (max-width: 992px) */
+
+/* MEDIUM */
+@media only screen and (max-width: 768px) {
+    .about__content {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .about__description {
+        width: 100%;
+        margin: 0;
+        padding: 0 30px;
+
+        text-align: center;
+    }
+
+    .about__image {
+        width: 100%;
+        padding-left: 13px;
+    }
+
+    .about__image > img {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+
+    .fact__items {
+        flex-flow: row wrap;
+    }
+
+    .fact__items > div {
+        width: 50%;
+    }
+}
+
+/* SMALL */
+@media only screen and (max-width: 576px) {
+    .hero > h1 {
+        font-size: 40px;
+    }
+
+    .fact__items > div {
+        width: 100%;
+    }
 }

@@ -1,3 +1,4 @@
+/* TOP-BAR PINK */
 .top-bar {
     position: sticky;
     top: 0;
@@ -50,8 +51,24 @@ ul.top-bar__list > li {
     text-transform: uppercase;
 }
 
-/* ______________________________ */
+/*------------ RESPONSIVE ON MOBILE FOR SOCIAL LIST ON PINK TOP-BAR */
+@media only screen and (max-width: 576px) {
+    ul.top-bar__list {
+        display: none;
+        visibility: hidden;
+    }
 
+    .top-bar__pink {
+        text-align: center;
+        display: block;
+        justify-content: none;
+    }
+}
+/*----------------------- END RESPONSIVE ---------------------------*/
+
+/* ________________________ */
+
+/* NAV */
 .header {
     padding: 25px 0;
 }
@@ -73,18 +90,18 @@ ul.top-bar__list > li {
     width: 100%;
 }
 
-ul.menu {
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-}
-
-/*------------RESPONSIVE: MOBILE */
-
+/*------------ RESPONSIVE ON MOBILE AND TABLET FOR PINK TOP-BAR */
 @media only screen and (max-width: 768px) {
     .header__menu {
         display: none;
     }
+}
+/*---------------------- END RESPONSIVE -------------------------*/
+
+ul.menu {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
 }
 
 ul.menu > li > a {
@@ -127,6 +144,8 @@ a :hover {
     -moz-box-reflect: below 5px linear-gradient(transparent, rgba(199, 60, 101, 0.333));
 }
 
+/* ________________________ */
+
 /* HAMBURGER MENU */
 
 .hamburger {
@@ -154,13 +173,13 @@ a :hover {
     box-shadow: 0 0 5px #ff2a6b, 0 0 25px #ff2a6b, 0 0 50px #ff2a6b, 0 0 100px #ff2a6b;
 }
 
-/*------------RESPONSIVE: MOBILE */
-
+/*------------ RESPONSIVE ON MOBILE AND TABLET FOR HAMBURGER MENU */
 @media only screen and (max-width: 768px) {
     .hamburger {
         display: flex;
     }
 }
+/*---------------------- END RESPONSIVE -------------------------*/
 
 .menu-btn__burger {
     width: 18px;
@@ -215,6 +234,27 @@ ul.menu__burger {
     margin: 0;
     padding-top: 15px;
     justify-content: center;
+
+    transition: all 0.25s ease-in-out;
+    animation-name: dropDown;
+    animation-duration: 0.75s;
+}
+
+@keyframes dropDown {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    40% {
+        opacity: 0.5;
+        scale: 1;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 ul.menu__burger a {
